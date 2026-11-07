@@ -1,4 +1,4 @@
-package org.firstinspires.ftc.teamcode;
+/*package org.firstinspires.ftc.teamcode;
 
 import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.hardware.Gamepad;
@@ -92,4 +92,4 @@ public class Linear {
     public int getRightPower(){
         return (int) rightSlide.getPower();
     }*/
-}
+//}
