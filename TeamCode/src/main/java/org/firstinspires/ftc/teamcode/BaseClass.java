@@ -39,6 +39,7 @@ public class BaseClass extends LinearOpMode {
     //private Linear linearModule;
     private Intake intakeModule;
     private Outtake outtakeModule;
+    private AprilTagReader aprilTagReader;
 
     // Global Variables
     public ElapsedTime matchTime = new ElapsedTime();
@@ -116,6 +117,8 @@ public class BaseClass extends LinearOpMode {
 
         windmill = hardwareMap.get(CRServo.class, "windmill");
         flywheel = hardwareMap.get(DcMotor.class, "flywheel");
+
+        aprilTagReader = new AprilTagReader(hardwareMap);
         
         // Encoders initialization is fully handled internally by the Linear class constructor
     }
